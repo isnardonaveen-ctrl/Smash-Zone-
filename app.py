@@ -32,7 +32,10 @@ if "bookings" not in st.session_state:
 st.title("🏓 SMASH ZONE")
 st.markdown("Select your location and court below to book your session.")
 st.divider()
+st.image("Smash Zone Logo_2.jpg", width=300) 
 
+st.markdown("Select your location and court below to book your session.")
+st.divider()
 # --- PRIMARY NAVIGATION: BRANCH TABS ---
 # We use a horizontal radio button list to act as tabs
 selected_branch = st.radio("📍 Select Branch", list(BRANCHES.keys()), horizontal=True)
