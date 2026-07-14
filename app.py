@@ -1,11 +1,17 @@
 import streamlit as st
+import os
 
 # --- PAGE CONFIGURATION ---
 st.set_page_config(page_title="Smash Zone Scheduler", page_icon="🎾", layout="centered")
 
 # --- HEADER & LOGO ---
-# Ensure "Smash Zone Logo_2.jpg" is in the same folder as this app.py file
-st.image("Smash Zone Logo_2.jpg", width=300) 
+image_path = "Smash Zone Logo_2.jpg"
+
+# This prevents the app from crashing if the image is missing
+if os.path.exists(image_path):
+    st.image(image_path, width=300)
+else:
+    st.warning("⚠️ Logo image not found. Make sure 'Smash Zone Logo_2.jpg' is in the exact same folder as this script.")
 
 st.title("Smash Zone Court Scheduler")
 st.markdown("Select your location and court below to book your session.")
