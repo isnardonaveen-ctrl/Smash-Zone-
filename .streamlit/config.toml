@@ -1,6 +1,14 @@
 [theme]
-primaryColor = "#78B82C"
-backgroundColor = "#0D203F"
-secondaryBackgroundColor = "#0D255F"
-textColor = "#FAFCFC"
+# The main accent color (buttons, highlights)
+primaryColor = "#00FFFF" # Replace with the exact hex from your new logo
+
+# The main background color behind everything
+backgroundColor = "#1E1E1E" # Replace with the exact hex from your new logo
+
+# The secondary background (used for sidebars or input fields)
+secondaryBackgroundColor = "#2D2D2D" # Replace with the exact hex from your new logo
+
+# Text color so it contrasts with the background
+textColor = "#FFFFFF" 
+
 font = "sans serif"
